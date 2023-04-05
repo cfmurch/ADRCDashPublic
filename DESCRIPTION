@@ -8,6 +8,7 @@ Authors@R: c(
 Description: Data explorer dashboard for the University of Alabama at Birmingham Alzheimer's Disease Center.
 License: What license is it under?
 Imports: 
+    ADRCDashHelper (>= 0.0.0.9000),
     bs4Dash (>= 2.2.1),
     cli (>= 3.6.0),
     config (>= 0.3.1),

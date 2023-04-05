@@ -17,12 +17,14 @@
 ## Amend DESCRIPTION with dependencies read from package code parsing
 ## install.packages('attachment') # if needed.
 # attachment::att_amend_desc()
+usethis::use_package('ADRCDashHelper', min_version = T) # devtools::install_github('cfmurch/ADRCDashHelper')
 usethis::use_package('bs4Dash', min_version = '2.2.1')
 usethis::use_package("reactable", min_version = '0.4.3')
 usethis::use_package("htmltools", min_version = '0.5.4')
 usethis::use_package('waiter', min_version = '0.2.5')
 usethis::use_package('shinyWidgets', min_version = '0.7.6')
 usethis::use_package("data.table", min_version = '1.14.6')
+usethis::use_data_table()
 # usethis::use_package('vctrs', min_version = '0.5.2')
 usethis::use_package('purrr', min_version = '1.0.1')
 usethis::use_package('forcats', min_version = '1.0.0')

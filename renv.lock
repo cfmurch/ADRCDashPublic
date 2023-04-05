@@ -9,6 +9,28 @@
     ]
   },
   "Packages": {
+    "ADRCDashHelper": {
+      "Package": "ADRCDashHelper",
+      "Version": "0.0.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "ADRCDashHelper",
+      "RemoteUsername": "cfmurch",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "5a13864fc0927555294fda597344b48deda8aff0",
+      "Hash": "891197943dd1bcade4bc7a101f7e5e33",
+      "Requirements": [
+        "cli",
+        "data.table",
+        "dplyr",
+        "glue",
+        "htmltools",
+        "lubridate",
+        "scales",
+        "tidyr"
+      ]
+    },
     "BH": {
       "Package": "BH",
       "Version": "1.81.0-1",
@@ -282,6 +304,14 @@
       "Source": "Repository",
       "Repository": "RSPM",
       "Hash": "e4f97056611e8e6b8b852d13b7400cf1",
+      "Requirements": []
+    },
+    "data.table": {
+      "Package": "data.table",
+      "Version": "1.14.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b4c06e554f33344e044ccd7fdca750a9",
       "Requirements": []
     },
     "desc": {

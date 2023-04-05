@@ -20,7 +20,7 @@ app_ui <- function(request) {
     
     # initial load spinner
     waiter::waiterShowOnLoad(
-      color = color_palette$grey_dark,
+      color = ADRCDashHelper::color_palette$grey_dark,
       html = shiny::tagList(
         tags$img(src = 'www/logo-watermark.png',
                  style = 'width: 200px; margin-bottom: 40px',
@@ -31,7 +31,7 @@ app_ui <- function(request) {
     ),
     
     # TODO: remove when ready
-    add_beta_ribbon(),
+    ADRCDashHelper::add_beta_ribbon(),
     
     # start of dashboard
     bs4Dash::dashboardPage(
