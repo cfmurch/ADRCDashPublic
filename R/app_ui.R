@@ -64,7 +64,7 @@ app_ui <- function(request) {
               id = 'landing-page',
               htmltools::tags$img(src = "www/splash.png"),
               htmltools::tags$p(
-                "This is the visualization dashboard for UAB's Alzheimer's Disease Research Center. Navigation is on the left-hand side and consists of a data exploration tab and operation dashboard. The exploration tab allows you to select covariates of interest and can be subset by sex and race. The operational dash further details participant workflows and engagement."
+                "This is the visualization dashboard for UAB's Alzheimer's Disease Research Center. Navigation is on the left-hand side and consists of a data exploration tab and operation dashboard. The exploration tab allows you to select covariates of interest and can be subset by sex and race."
               )
             )
           ),

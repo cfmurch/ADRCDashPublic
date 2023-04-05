@@ -39,3 +39,5 @@ RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.1.6)
 Config/testthat/edition: 3
+Remotes: 
+    github::cfmurch/cfmurch/ADRCDashHelper
