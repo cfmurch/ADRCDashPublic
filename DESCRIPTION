@@ -1,0 +1,40 @@
+Package: ADRCDashPublic
+Title: ADRC Public Facing Dashboard
+Version: 0.0.0.9000
+Authors@R: c(
+  person('Chad', 'Murchison', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut')),
+  person('Joseph', 'Marlo', email = 'support@landeranalytics.com', role = 'aut')
+  )
+Description: Data explorer dashboard for the University of Alabama at Birmingham Alzheimer's Disease Center.
+License: What license is it under?
+Imports: 
+    bs4Dash (>= 2.2.1),
+    cli (>= 3.6.0),
+    config (>= 0.3.1),
+    data.table (>= 1.14.6),
+    dplyr (>= 1.1.0),
+    echarts4r (>= 0.4.4),
+    forcats (>= 1.0.0),
+    glue (>= 1.6.2),
+    golem (>= 0.4.0),
+    htmltools (>= 0.5.4),
+    htmlwidgets (>= 1.6.1),
+    lubridate (>= 1.9.1),
+    purrr (>= 1.0.1),
+    RColorBrewer (>= 1.1.3),
+    reactable (>= 0.4.3),
+    rlang (>= 1.0.6),
+    shiny (>= 1.7.4),
+    shinyWidgets (>= 0.7.6),
+    stringi (>= 1.7.12),
+    stringr (>= 1.5.0),
+    tibble (>= 3.1.8),
+    tidyr (>= 1.3.0),
+    tidyselect (>= 1.2.0),
+    waiter (>= 0.2.5)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.1.6)
+Config/testthat/edition: 3
