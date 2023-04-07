@@ -69,7 +69,7 @@ app_ui <- function(request) {
             )
           ),
           
-          # Data Explorer tab - consists of 1 fluidRow for a plotly element, another for a table output
+          # Data Explorer tab
           bs4Dash::tabItem(
             tabName = "explorer_output",
             
@@ -116,7 +116,46 @@ app_ui <- function(request) {
                 echarts4r::echarts4rOutput("plot_curr_explorer_echarts", height = "500px")
               )
             )
+          ),
+          
+          # Inventories tab
+          bs4Dash::tabItem(
+            tabName = "biospecimen_inventory",
+            
+            fluidRow(
+              bs4Dash::box(
+                width = 4,
+                title = 'Inputs',
+                shinyWidgets::pickerInput(
+                  inputId = "inventory_group", 
+                  label = "Select inventory subsets",
+                  choices = inventory_group_select,
+                  options = list(
+                    `actions-box` = TRUE, 
+                    size = "auto",
+                    `select-text-format` = "count", 
+                    `count-selected-text` = "{0} selected"
+                  ),
+                  multiple = TRUE)
+              )
+            ),
+            
+            fluidRow(
+              bs4Dash::box(
+                width = 12,
+                title = "Inventory Totals {REVIEW NAME}",
+                reactable::reactableOutput(outputId = "biospecimen_table_sum")
+              ),
+              bs4Dash::box(
+                width = 12,
+                title = "Inventory Totals {REVIEW NAME}",
+                reactable::reactableOutput(outputId = "biospecimen_table_mean")
+              )
+            )
           )
+          
+          
+          
         )
       ),
       
@@ -151,8 +190,16 @@ app_ui <- function(request) {
           bs4Dash::menuItem(
             text = "Data Explorer", 
             tabName = "explorer_output",
-            icon = icon("wpexplorer")
+            icon = icon("bar-chart")
+          ),
+          
+          # Biospecimen Inventories
+          bs4Dash::menuItem(
+            text = "Biospecimen Inventories", 
+            tabName = "biospecimen_inventory",
+            icon = icon("warehouse")
           )
+          
         )
         
       ),
